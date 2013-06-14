@@ -10,4 +10,9 @@
 
 @interface SecondViewController : UIViewController
 
+@property (retain, nonatomic) NSString *urlWeb;
+
+@property (retain, nonatomic) IBOutlet UIWebView *webView;
+
+- (IBAction)Aceptar:(id)sender;
 @end

@@ -18,8 +18,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        self.title = NSLocalizedString(@"Second", @"Second");
-        self.tabBarItem.image = [UIImage imageNamed:@"second"];
     }
     return self;
 }
@@ -28,6 +26,10 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    NSURL*url=[NSURL URLWithString:self.urlWeb];
+    NSURLRequest*request=[NSURLRequest requestWithURL:url];
+    [self.webView loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,4 +38,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+    [_webView release];
+    [super dealloc];
+}
+
+#pragma mark - ACEPTAR - Regresar
+
+- (IBAction)Aceptar:(id)sender {
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 @end
