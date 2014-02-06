@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="JXf-Kz-gu3" customClass="NotasSeccionCustomCell">
+            <rect key="frame" x="0.0" y="0.0" width="220" height="204"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JXf-Kz-gu3" id="vZ9-kO-vHt">
+                <rect key="frame" x="0.0" y="0.0" width="220" height="203"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lDQ-PQ-WoV" userLabel="View - Con Foto">
+                        <rect key="frame" x="-1" y="0.0" width="220" height="204"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X1E-n6-od4">
+                                <rect key="frame" x="0.0" y="0.0" width="220" height="204"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ST_celda.png" translatesAutoresizingMaskIntoConstraints="NO" id="wIW-Xr-Jgd" userLabel="Image View - imagen nota">
+                                        <rect key="frame" x="0.0" y="0.0" width="220" height="203"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="be3-pA-1xr">
+                                <rect key="frame" x="105" y="92" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.66666668650000005" green="0.0" blue="0.066666670139999995" alpha="1" colorSpace="deviceRGB"/>
+                            </activityIndicatorView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sombra.png" translatesAutoresizingMaskIntoConstraints="NO" id="jg5-6F-fuB">
+                                <rect key="frame" x="0.0" y="137" width="220" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" preferredMaxLayoutWidth="201" translatesAutoresizingMaskIntoConstraints="NO" id="S4I-ae-puV" userLabel="Label - Titulo">
+                                <rect key="frame" x="10" y="143" width="201" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YFb-yR-H9h" userLabel="View - Sin Foto">
+                        <rect key="frame" x="-2" y="0.0" width="220" height="204"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3wW-hX-RIW">
+                                <rect key="frame" x="0.0" y="0.0" width="220" height="203"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" minimumScaleFactor="0.10000000149011612" preferredMaxLayoutWidth="180" translatesAutoresizingMaskIntoConstraints="NO" id="KW9-Rh-Vfs" userLabel="Label - Titulo">
+                                <rect key="frame" x="20" y="20" width="180" height="163"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqE-q4-Fht" userLabel="Button - mostrar detalle">
+                        <rect key="frame" x="0.0" y="0.0" width="220" height="203"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="mostrarDetalleInfo:" destination="JXf-Kz-gu3" eventType="touchUpInside" id="8O2-mP-NZY"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnMostrarDetalleInfo" destination="lqE-q4-Fht" id="ON2-ZP-g0C"/>
+                <outlet property="cellSpinner" destination="be3-pA-1xr" id="3yZ-a1-3Po"/>
+                <outlet property="imagenFontoTituloConImagen" destination="jg5-6F-fuB" id="J3K-b2-aYe"/>
+                <outlet property="imagenFontoTituloSinImagen" destination="3wW-hX-RIW" id="x1o-EQ-1vP"/>
+                <outlet property="imagenNota" destination="wIW-Xr-Jgd" id="V9L-fR-oa3"/>
+                <outlet property="lbTituloConImagen" destination="S4I-ae-puV" id="EAx-Mf-nIL"/>
+                <outlet property="lbTituloSinImagen" destination="KW9-Rh-Vfs" id="PCE-2i-lsF"/>
+                <outlet property="viewConFoto" destination="lDQ-PQ-WoV" id="nyl-ld-5Pn"/>
+                <outlet property="viewSinFoto" destination="YFb-yR-H9h" id="xWZ-S6-lNQ"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ST_celda.png" width="90" height="58"/>
+        <image name="sombra.png" width="5" height="124"/>
+    </resources>
+</document>

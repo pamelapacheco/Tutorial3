@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13A603" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Favoritos" representedClassName="Favoritos" syncable="YES">
+        <attribute name="autor" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="balazo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="body" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cabeza" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="comments" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="fecha" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fotoNota" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="idNota" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="pieFoto" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="seccion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sigloTV" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumb" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="youtube" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Iglesias" representedClassName="Iglesias" syncable="YES">
+        <attribute name="capellan" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ciudad" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="correspondencia" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="direccion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="erigida" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fax" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="fiesta_patronal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parroco" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="telefono" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tipo" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="ImagenesMuseo" representedClassName="ImagenesMuseo" syncable="YES">
+        <attribute name="descripcion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="orden" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <relationship name="museo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Museos" inverseName="imagenes" inverseEntity="Museos" syncable="YES"/>
+    </entity>
+    <entity name="Museos" representedClassName="Museos" syncable="YES">
+        <attribute name="descripcion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="direccion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="horario" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="idMuseo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imagenPrincipal" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numImagenes" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="telefono" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url360" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="urlInformacion" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="imagenes" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="ImagenesMuseo" inverseName="museo" inverseEntity="ImagenesMuseo" syncable="YES"/>
+    </entity>
+    <entity name="Servicios" representedClassName="Servicios" syncable="YES">
+        <attribute name="icono" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Favoritos" positionX="-6986" positionY="788" width="128" height="238"/>
+        <element name="Iglesias" positionX="-6597" positionY="720" width="128" height="223"/>
+        <element name="ImagenesMuseo" positionX="-6228" positionY="990" width="126" height="103"/>
+        <element name="Museos" positionX="-6221" positionY="720" width="128" height="208"/>
+        <element name="Servicios" positionX="-6588" positionY="1017" width="128" height="73"/>
+    </elements>
+</model>
